@@ -1,30 +1,34 @@
 export default {
   Africa: {
     music: 'africanmusic.mp3',
-    image: 'africaoutfit.jpg'
+    image: 'Africa.png'
   },
   Antarctica: {
     music: 'antarctica.mp3',
-    image: 'antarcticaoutfit.jpg'
+    image: 'penguin.png'
   },  
   Asia: {
     music: 'asianmusic.mp3',
-    image: 'asiaoutfit.jpg'
+    image: 'asia.png'
   },  
   Europe: {
     music: 'euromusic.mp3',
-    image: 'eurooutfit.jpg'
+    image: 'Europe.png'
   },
   'North America': {
     music: 'usamusic.mp3',
-    image: 'usaoutfit.jpg'
+    image: 'NorthAmerican.png'
   },
   'South America': {
     music: 'latinmusic.mp3',
-    image: 'mayanoutfit.jpg'
+    image: 'SouthAmerican.png'
   },
   Oceania: {
     music: 'pacificmusic.mp3',
-    image: 'pacificoutfit.jpg'
+    image: 'Oceania.png'
+  },
+  Wakanda: {
+    music:'wakanda.mp3',
+    image:'BlackPanther.png'
   }
 }
