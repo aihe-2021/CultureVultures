@@ -12,7 +12,7 @@ function App () {
       <div>
         <h1>The Clothing Safari!</h1>
       </div>
-      <div>
+      <div class='container'>
         <Route exact path='/' component={Home} />
         <Route path='/continents/:name' component={Continent} />
       </div>
