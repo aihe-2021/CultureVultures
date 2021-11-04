@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom'
 function Home () {
   return (
     <>
-    <p>Dane:</p><img class="dane" src="/images/dane.png" ></img>
-    <p>Danny:</p><img class="danny" src="/images/danny.png"></img>
-    <p>Walid:</p><img class="walid" src="/images/walid.png"></img>
+    {/* <div className="header">
+    <h2>Dane:</h2>
+    <h2>Danny:</h2>
+    <h2>Walid:</h2>
+    </div> */}
+    <div className="images">
+      <img class="dane" src="/images/dane.png" ></img>
+      <img class="danny" src="/images/danny.png"></img>
+      <img class="walid" src="/images/walid.png"></img>
+    </div>
     </>
   )
 }

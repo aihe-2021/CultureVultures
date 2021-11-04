@@ -15,22 +15,80 @@ body {
 }
 
 h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #b16b40;
   text-align: center;
 }
+
+/* .header {
+  flex-wrap: row wrap;
+  flex-direction: row;
+} */
 
 .container {
   display: flex;
   align-items: center;
-  gap: 40px;
   padding-top: 150px;
+  padding-left: 150px;
 }
 
-img {
+.images {
+  flex-wrap: wrap;
+  gap: 150px;
   width: 100%;
   height: auto;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .dane {
   width: 25%;
   height: 10%;
+  margin: 30px;
+}
+
+.danny {
+  width: 25%;
+  margin: 30px;
+}
+
+.walid {
+  margin: 30px;
 }
