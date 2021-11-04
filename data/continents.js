@@ -3,8 +3,8 @@ export default {
     music: 'africanmusic.mp3',
     image: 'africaoutfit.jpg'
   },
-  Antartica: {
-    music: 'antartica.mp3',
+  Antarctica: {
+    music: 'antarctica.mp3',
     image: 'antarcticaoutfit.jpg'
   },  
   Asia: {
