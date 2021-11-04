@@ -13,9 +13,14 @@ function App () {
         <h1>The Clothing Safari!</h1>
       </div>
       <div>
-        {/* <Route component={Nav} /> */}
+<>
+        <Route component={Nav} />
+        <Route exact path='/continents/:name' component={Continent} />
+        
+        </>
         <Route exact path='/' component={Home} />
         <Route path='/continents/:name' component={Continent} />
+
       </div>
     </>
   )
