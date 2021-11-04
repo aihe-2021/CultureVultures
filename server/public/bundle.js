@@ -74,17 +74,19 @@ function Continent(props) {
       name = _props$match$params.name,
       user = _props$match$params.user; // console.log(user)
 
-  var userObj = _data_users__WEBPACK_IMPORTED_MODULE_2__["default"][name];
+  var userObj = _data_users__WEBPACK_IMPORTED_MODULE_2__["default"][user];
   console.log(userObj);
   var continent = _data_continents__WEBPACK_IMPORTED_MODULE_1__["default"][name];
   var image = continent.image;
-  var music = continent.music; // const userimage = userObj.image
-
+  var music = continent.music;
+  var userImage = userObj.image;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("audio", {
     src: "/music/".concat(music),
     controls: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/".concat(image)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "/images/".concat(userImage)
   }));
 }
 
@@ -187,12 +189,12 @@ __webpack_require__.r(__webpack_exports__);
 function User(props) {
   var name = props.match.params.name;
   var users = _data_users__WEBPACK_IMPORTED_MODULE_2__["default"][name];
-  var image = users.image;
+  var userImage = users.image;
   var quote = users.quote;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     user: name
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Hi I'm ", name, "! Take me on a clothing Safari around the world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, quote), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/".concat(image)
+    src: "/images/".concat(userImage)
   }));
 }
 
