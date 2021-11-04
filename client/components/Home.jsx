@@ -10,7 +10,7 @@ function Home () {
     <h2>Walid:</h2>
     </div> */}
     <div className="images">
-      <img class="dane" src="/images/dane.png" ></img>
+      <img draggable='true' class="dane" src="/images/dane.png" ></img>
       <img class="danny" src="/images/danny.png"></img>
       <img class="walid" src="/images/walid.png"></img>
     </div>

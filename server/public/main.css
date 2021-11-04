@@ -6,6 +6,13 @@ body {
   background-size: cover;
 }
 
+.dragme {
+  position: relative;
+  width: 270px;
+  height: 203px;
+  cursor: move;
+}
+
 @media screen and (max-width: 800px) {
   .left,
   .main,
@@ -40,6 +47,8 @@ h1 {
   height: auto;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+  cursor: move;
+  position: relative;
 }
 
 @keyframes shake {
