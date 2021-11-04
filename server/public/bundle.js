@@ -24,7 +24,7 @@ function App() {
     exact: true,
     path: "/continents/:name",
     component: _Continent__WEBPACK_IMPORTED_MODULE_1__["default"]
-  })));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null)));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);

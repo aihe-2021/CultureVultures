@@ -39,7 +39,9 @@
   },
   "homepage": "https://github.com/aihe-2021/CultureVultures#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.1",
+    "react-bootstrap": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

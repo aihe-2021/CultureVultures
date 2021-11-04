@@ -14,6 +14,8 @@ function App () {
       <div>
         {/* <Route component={Nav} /> */}
         <Route exact path='/continents/:name' component={Continent} />
+        <>
+        </>
       </div>
     </>
   )
