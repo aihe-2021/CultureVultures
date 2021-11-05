@@ -4,11 +4,17 @@ import { Link } from 'react-router-dom'
 function Home () {
   return (
     <>
-    {/* <iframe src="/music/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> */}
-    <audio src="music/Homepage.mp3" controls></audio>
-     <p>Dane:</p><Link to='./Dane'><img src="/images/dane.png"></img></Link>
-     <p>Danny:</p><Link to='./Danny'><img src="/images/danny.png"></img></Link>
-     <p>Walid:</p><Link to='./Walid'><img src="/images/walid.png"></img></Link>
+    <div className="home-bg">
+      <audio src="music/Homepage.mp3" controls></audio>
+      <div className="container">
+        <div className="images">
+        <Link to='./Dane'><img className="dane" draggable='true' src="/images/dane.png"></img></Link>
+        <Link to='./Danny'><img className="danny" draggable='true' src="/images/danny.png"></img></Link>
+        <Link to='./Walid'><img className='walid' draggable='true' src="/images/walid.png"></img></Link>
+        </div>
+      </div>
+    </div>
+    
     </>
   )
 }

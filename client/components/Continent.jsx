@@ -17,9 +17,11 @@ function Continent (props) {
     <>
     <div>
       <audio src={`/music/${music}`} controls />
+    </div>
+    <div className="user-container">
       {/* <Route component={Nav} /> */}
-      <img src={`/images/${image}`}></img>
-      <img src={`/images/${userImage}`}></img>
+      <img className="clothing" src={`/images/${image}`}></img>
+      <img className="user" src={`/images/${userImage}`}></img>
     </div>
     <div>
       <Link to='/'>Home</Link>
