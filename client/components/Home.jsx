@@ -5,6 +5,7 @@ function Home () {
   return (
     <>
     <div className="home-bg">
+      <audio src="music/Homepage.mp3" controls></audio>
       <div className="container">
         <div className="images">
         <Link to='./Dane'><img className="dane" draggable='true' src="/images/dane.png"></img></Link>

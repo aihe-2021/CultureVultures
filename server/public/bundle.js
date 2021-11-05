@@ -57,32 +57,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _data_continents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/continents */ "./data/continents.js");
 /* harmony import */ var _data_users__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../data/users */ "./data/users.js");
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Nav */ "./client/components/Nav.jsx");
-/* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./User */ "./client/components/User.jsx");
+/* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User */ "./client/components/User.jsx");
 
 
 
 
-
+ // import Nav from './Nav'
 
 
 
 function Continent(props) {
   var _props$match$params = props.match.params,
       name = _props$match$params.name,
-      user = _props$match$params.user; // console.log(user)
-
+      user = _props$match$params.user;
   var userObj = _data_users__WEBPACK_IMPORTED_MODULE_2__["default"][user];
-  console.log(userObj);
   var continent = _data_continents__WEBPACK_IMPORTED_MODULE_1__["default"][name];
   var image = continent.image;
   var music = continent.music;
   var userImage = userObj.image;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "audio"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("audio", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("audio", {
     src: "/music/".concat(music),
     controls: true
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -93,7 +89,9 @@ function Continent(props) {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     className: "user",
     src: "/images/".concat(userImage)
-  })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    to: "/"
+  }, "Home")));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Continent);
@@ -119,7 +117,10 @@ __webpack_require__.r(__webpack_exports__);
 function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "home-bg"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("audio", {
+    src: "music/Homepage.mp3",
+    controls: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "images"
@@ -194,40 +195,9 @@ function Nav(props) {
 /*!************************************!*\
   !*** ./client/components/User.jsx ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./client/components/Nav.jsx");
-/* harmony import */ var _data_users__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../data/users */ "./data/users.js");
-
-
-
-
-
-function User(props) {
-  var name = props.match.params.name;
-  var users = _data_users__WEBPACK_IMPORTED_MODULE_2__["default"][name];
-  var userImage = users.image;
-  var quote = users.quote;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "container-user"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    user: name
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "user-text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Hi I'm ", name, "! Take me on a clothing Safari around the world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, quote)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "user-image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/".concat(userImage)
-  }))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (User);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/client/components/User.jsx: Unexpected token (13:1)\n\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mreturn\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m \u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"container-user\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mNav\u001b[39m user\u001b[33m=\u001b[39m{name}\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"user-text\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n    at Object._raise (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:541:17)\n    at Object.raiseWithData (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:534:17)\n    at Object.raise (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:495:17)\n    at Object.unexpected (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:3560:16)\n    at Object.jsxParseIdentifier (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:7236:12)\n    at Object.jsxParseNamespacedName (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:7246:23)\n    at Object.jsxParseElementName (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:7257:21)\n    at Object.jsxParseOpeningElementAt (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:7344:22)\n    at Object.jsxParseElementAt (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:7377:33)\n    at Object.jsxParseElementAt (/Users/Walid.B13/Desktop/Bootcamp/Projects/CultureVultures/node_modules/@babel/parser/lib/index.js:7393:32)");
 
 /***/ }),
 
@@ -293,15 +263,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   Dane: {
     image: 'dane.png',
-    quote: "My parents say I'm free to Rome in Italy!"
+    quote: 'danequote.png'
   },
   Danny: {
     image: 'danny.png',
-    quote: 'I’ve heard Oslo is a particularly dangerous city. There’s Norway I’d ever go.'
+    quote: 'dannyquote.png'
   },
   Walid: {
     image: 'walid.png',
-    quote: "When travelling sometimes Alaska local for directions."
+    quote: 'walidquote.png'
   }
 });
 
