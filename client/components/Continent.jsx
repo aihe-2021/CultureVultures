@@ -16,13 +16,16 @@ function Continent (props) {
   const music = continent.music
   const userImage = userObj.image
   return (
-    <div>
-    
+    <>
+    <div className="audio">
       <audio src={`/music/${music}`} controls />
-      {/* <Route component={Nav} /> */}
-      <img src={`/images/${image}`}></img>
-      <img src={`/images/${userImage}`}></img>
     </div>
+    <div className="user-container">
+      {/* <Route component={Nav} /> */}
+      <img className="clothing" src={`/images/${image}`}></img>
+      <img className="user" src={`/images/${userImage}`}></img>
+    </div>
+    </>
   )
 }
 

@@ -7,11 +7,11 @@ import userData from '../../data/users'
 function Nav (props) {
   const continents = Object.keys(continentData)
   return (
-    <div>
-      <h2>Pick your Outfit</h2>
+    <div className="nav-container">
+      <h2 className="nav-header">Pick your Outfit</h2>
       <ul>
         {continents.map((continent) => {
-          return <li key={continent}>
+          return <li className="nav-item" key={continent}>
             <Link to={'/continents/' + continent + '/' + props.user}>{continent}</Link>
           </li>
         })}
