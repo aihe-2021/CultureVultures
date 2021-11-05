@@ -17,8 +17,12 @@ function User (props) {
       </div>
       <div className="user-image">
         <img src={`/images/${userImage}`}></img>
+        </div>
+        <div className="user-quote">
         <img src={`/images/${quote}`}></img>
-      </div>
+        </div>
+        
+      
     </div>
     
     

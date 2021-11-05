@@ -12,7 +12,7 @@ function Nav (props) {
       <ul>
         {continents.map((continent) => {
           return <li className="nav-item" key={continent}>
-            <Link to={'/continents/' + continent + '/' + props.user}>{continent}</Link>
+            <p><Link to={'/continents/' + continent + '/' + props.user}>{continent}</Link></p>
           </li>
         })}
         <li><Link to='/'>Home</Link></li>
